@@ -35,24 +35,28 @@ body {
     min-height: 30rem;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
+    place-items: center;
     background-image: linear-gradient(180deg, #171E28, #222933);
     border-radius: 5%;
     padding: 2rem;
 }
 
-#starImgContainer {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    background-color: #252F38;
+#ratingContainer {
+    background-color: #242E3C;
+    width: fit-content;
+    min-width: 5rem;
+    height: 2rem;
     display: grid;
     place-items: center;
-    /* background: linear-gradient(to bottom, --dark-blue, --very-dark-blue); */
+    color: hsla(25, 97%, 53%, 0.853);
+    padding: 0 1rem;
+    border-radius: 1rem;
 }
 
-#starImgContainer img {
-    height: 40%;
+h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: medium;
 }
 
 h1 {
@@ -60,49 +64,11 @@ h1 {
     font-weight: 700;
 }
 
-h2 {
-    color: var(--light-gray);
-    font-weight: 400;
-    font-size:large;
-}
-
-#ratingLevels {
-    height: fit-content;
-    min-height: 4rem;
-    width: 100%;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.numberContainer {
-    height: 70%;
-    min-height: 4rem;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    display: grid;
-    background-color: #272E38;
-    color: var(--light-gray);
-    place-items: center;
-    transition: all 0.4s;
-}
-
-button {
-    place-self: center;
-    width: 90%;
-    height: 3rem; 
-    background-color: var(--orange);
-    color: var(--white);
-    border: none;
-    border-radius: 1.5rem; 
-    font-weight: 500;
+p {
+    color: #949BA5;
     font-size: large;
-    transition: all 0.4s;
-}
-
-button:hover {
-    background-color: var(--white);
-    color: var(--orange);
+    font-weight: 400;
+    text-align: center;
 }
 
 @media (max-width: 500px) {

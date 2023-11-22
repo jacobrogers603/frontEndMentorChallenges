@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Rating Component</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
-    <div id="mainContainer">
+    <div id="mainContainer" onclick="selectionMade(0, event)">
       <div id="starImgContainer">
         <img src="images/icon-star.svg" alt="star icon" />
       </div>
@@ -17,23 +18,48 @@
         appreciated to help us improve our offering!
       </h2>
       <div id="ratingLevels">
-        <div class="numberContainer">
+        <div
+          id="one"
+          class="numberContainer"
+          onmouseover="rateColors('one')"
+          onmouseout="resetColors()"
+          onclick="selectionMade(1, event)">
           <h3>1</h3>
         </div>
-        <div class="numberContainer">
+        <div
+          id="two"
+          class="numberContainer"
+          onmouseover="rateColors('two')"
+          onmouseout="resetColors()"
+          onclick="selectionMade(2, event)">
           <h3>2</h3>
         </div>
-        <div class="numberContainer">
+        <div
+          id="three"
+          class="numberContainer"
+          onmouseover="rateColors('three')"
+          onmouseout="resetColors()"
+          onclick="selectionMade(3, event)">
           <h3>3</h3>
         </div>
-        <div class="numberContainer">
+        <div
+          id="four"
+          class="numberContainer"
+          onmouseover="rateColors('four')"
+          onmouseout="resetColors()"
+          onclick="selectionMade(4, event)">
           <h3>4</h3>
         </div>
-        <div class="numberContainer">
+        <div
+          id="five"
+          class="numberContainer"
+          onmouseover="rateColors('five')"
+          onmouseout="resetColors()"
+          onclick="selectionMade(5, event)">
           <h3>5</h3>
         </div>
       </div>
-      <button>SUBMIT</button>
+      <button onclick="accepted()" id="submitBtn">S U B M I T</button>
     </div>
   </body>
 </html>
