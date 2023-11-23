@@ -1,19 +1,21 @@
-let ratingChosen = 0;
+let rating = 0;
+let newRatingSelected = false;
+let ratingChosen = false;
 
 function accepted() {
-    if(ratingChosen === 0){
+    if(rating === 0){
         return; 
     }
 
-    window.location.href = "accepted.html?rating=" + ratingChosen;
+    window.location.href = "accepted.html?rating=" + rating;
 }
 
 function rateColors(ratingSelected) {
 
-    if(ratingChosen !== 0){
+    if(ratingChosen === true && newRatingSelected === false){
         return;
     }
-    
+
     resetColors();
 
     var one = document.getElementById("one");
@@ -65,11 +67,13 @@ function rateColors(ratingSelected) {
             four.style.color = "var(--white)";
             break;
     }   
+
+    newRatingSelected = false;
 }
 
 function resetColors(){
 
-    if(ratingChosen !== 0){
+    if(ratingChosen === true && newRatingSelected === false){
         return;
     }
 
@@ -95,9 +99,36 @@ function resetColors(){
 function selectionMade(number, event) {
 
     event.stopPropagation();
-    ratingChosen = number;
+    rating = number;
 
-    if(ratingChosen === 0){
+    if(rating === 0){
+        ratingChosen = false;
+        newRatingSelected = false;
         resetColors();
+        return;    
+    }
+
+    if(rating !== 0 && ratingChosen === true){
+        newRatingSelected = true;
+    }
+    
+    ratingChosen = true;
+
+    switch(rating) {
+        case 1:
+            rateColors("one");
+            break;
+        case 2:
+            rateColors("two");
+            break;
+        case 3:
+            rateColors("three");
+            break;
+        case 4:
+            rateColors("four");
+            break;
+        case 5:
+            rateColors("five");
+            break;
     }
 }
