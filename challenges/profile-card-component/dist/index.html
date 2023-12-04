@@ -6,9 +6,38 @@
     <link href="output.css" rel="stylesheet" />
   </head>
   <body class="h-screen bg-darkCyan grid place-items-center">
-    <article class="h-10 w-10 bg-white grid grid-cols-1">
-      <img src="../images/bg-pattern-top.svg" alt="bubble pattern image" />
-      <h1>Name</h1>
-    </article>
+    <main>
+      <article
+        class="h-fit w-96 bg-white grid grid-cols-1 place-items-center relative font-kumbhSans rounded-xl">
+        <img
+          src="../images/bg-pattern-card.svg"
+          alt="bubble pattern image"
+          class="w-full rounded-t-xl" />
+        <img
+          src="../images/image-victor.jpg"
+          alt="profile photo"
+          class="absolute top-24 rounded-full object-cover border-solid border-4 border-white" />
+        <h1 class="mt-16 font-bold">
+          Victor Crest
+          <span class="text-darkGrayishBlue font-normal">26</span>
+        </h1>
+        <p class="font-normal mb-8 mt-2">London</p>
+        <footer
+          class="w-full border-t-2 border-solid grid grid-cols-3 p-8 font-bold">
+          <div class="grid grid-cols-1 place-items-center">
+            <h2>80k</h2>
+            <p class="font-normal">followers</p>
+          </div>
+          <div class="grid grid-cols-1 place-items-center">
+            <h2>803K</h2>
+            <p class="font-normal">Likes</p>
+          </div>
+          <div class="grid grid-cols-1 place-items-center">
+            <h2>1.4K</h2>
+            <p class="font-normal">Photos</p>
+          </div>
+        </footer>
+      </article>
+    </main>
   </body>
 </html>

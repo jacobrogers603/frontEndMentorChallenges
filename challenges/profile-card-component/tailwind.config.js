@@ -9,7 +9,10 @@ module.exports = {
       darkGrayishBlue: 'rgb(var(--dark-grayish-blue) / <alpha-value>)',
       darkCyan: 'rgb(var(--dark-cyan) / <alpha-value>)',
       darkGray: 'rgb(var(--dark-gray) / <alpha-value>)'
-    }
+    },
+    fontFamily: {
+      kumbhSans: ['Kumbh Sans', 'sans-serif'], 
+    },
   },
   },
   plugins: [],
