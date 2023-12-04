@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/*{html,js}"],
+  content: ["./dist/index.html", "./src/input.css"],
   theme: {
     extend: {
       colors: {
@@ -14,8 +14,10 @@ module.exports = {
       kumbhSans: ['Kumbh Sans', 'sans-serif'], 
     },
     minWidth: {
-      '90p': '90%',
       'custom': '21.875rem'
+    },
+    spacing: {
+      'custom': '5.5rem'
     }
   },
   },

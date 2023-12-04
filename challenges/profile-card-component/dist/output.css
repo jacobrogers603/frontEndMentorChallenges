@@ -549,12 +549,12 @@ video {
   position: relative;
 }
 
-.top-20 {
-  top: 5rem;
+.top-custom {
+  top: 5.5rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
+.mb-11 {
+  margin-bottom: 2.75rem;
 }
 
 .ml-1 {
@@ -567,22 +567,6 @@ video {
 
 .mt-20 {
   margin-top: 5rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mb-11 {
-  margin-bottom: 2.75rem;
 }
 
 .grid {
