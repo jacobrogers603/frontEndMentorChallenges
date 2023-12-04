@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --very-dark-desaturated-blue: 45 50 72;
+        --dark-grayish-blue: 106 111 129;
+        --dark-cyan: 25 162 174;
+        --dark-gray: 150 150 150;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
