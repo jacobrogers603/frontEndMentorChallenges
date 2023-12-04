@@ -13,6 +13,10 @@ module.exports = {
     fontFamily: {
       kumbhSans: ['Kumbh Sans', 'sans-serif'], 
     },
+    minWidth: {
+      '90p': '90%',
+      'custom': '21.875rem'
+    }
   },
   },
   plugins: [],

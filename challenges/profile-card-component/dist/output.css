@@ -549,41 +549,56 @@ video {
   position: relative;
 }
 
-.top-24 {
-  top: 6rem;
+.top-20 {
+  top: 5rem;
 }
 
 .mb-8 {
   margin-bottom: 2rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
 }
 
-.grid {
-  display: grid;
+.mt-20 {
+  margin-top: 5rem;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-full {
   width: 100%;
+}
+
+.min-w-custom {
+  min-width: 21.875rem;
 }
 
 .grid-cols-1 {
@@ -649,6 +664,16 @@ video {
 
 .font-kumbhSans {
   font-family: Kumbh Sans, sans-serif;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
